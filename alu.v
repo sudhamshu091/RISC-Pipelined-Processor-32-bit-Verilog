@@ -38,20 +38,20 @@ always @(*)
                 flags[0] = 1'b0; 
                 flags[1] = 1'b0;
                 end
-           end                        				          // cmp
+           end                        				// cmp
 5'b00110 : aluresult = a & b ; 					// and
 5'b00111 : aluresult = a | b ; 					// or
 5'b01000 : aluresult = ~a ;    					// not
 5'b01001 : aluresult = b ;    					// mov
-5'b01010 : aluresult = a << b ;   				          // lsl
-5'b01011 : aluresult = a >> b ; 				          // a unsigned   //lsr
+5'b01010 : aluresult = a << b ;   				// lsl
+5'b01011 : aluresult = a >> b ; 				// a unsigned   //lsr
 5'b01100 : 
           begin
-          aluresult= a_signed >>> b;                     	                    // a signed     //asr
+          aluresult= a_signed >>> b;                     	// a signed     //asr
           end
 5'b01101:
           begin
-                             					          // nop
+                             					// nop
           
           end
                    
