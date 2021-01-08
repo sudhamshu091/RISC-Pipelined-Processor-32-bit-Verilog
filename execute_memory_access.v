@@ -17,7 +17,7 @@ reg [4:0] alusignal;
                    isst          <= p.pr2.isst;
                    isld          <= p.pr2.isld;
                    isbeq         <= p.pr2.isbeq;
-                   Isbgt         <= p.pr2.Isbgt;
+                   isbgt         <= p.pr2.isbgt;
                    isret         <= p.pr2.isret;
                    isimmediate   <= p.pr2.isimmediate;
                    iswb          <= p.pr2.iswb;
