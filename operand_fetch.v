@@ -7,7 +7,7 @@ output I;
 output [3:0] rd;
 output [31:0] immx,branchtarget,op1,op2;
 
-wire [31:0] Instuction,pc_current;
+wire [31:0] instruction,pc_current;
 wire isret,isst;
 reg [4:0] opcode;
 reg I;
