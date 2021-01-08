@@ -2,7 +2,7 @@ module memory_access_write_back (clk);
 input clk;          
 wire clk;
 reg [31:0] instruction,pc_current,branchtarget,aluresult1,ldresult;
-reg isst, isld, isbeq, isbgt, isret, IsImmediate, iswb, isubranch, iscall;
+reg isst, isld, isbeq, isbgt, isret, isimmediate, iswb, isubranch, iscall;
 reg [4:0] alusignal;
 reg [3:0] rd;
 
@@ -18,7 +18,7 @@ reg [3:0] rd;
                    isbeq         <= p.pr3.isbeq;
                    isbgt         <= p.pr3.isbgt;
                    isret         <= p.pr3.isret;
-                   IsImmediate   <= p.pr3.IsImmediate;
+                   isimmediate   <= p.pr3.isimmediate;
                    iswb          <= p.pr3.iswb;
                    isubranch     <= p.pr3.isubranch;
                    iscall        <= p.pr3.iscall;
