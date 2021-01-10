@@ -1,4 +1,4 @@
-module alu( alusignal, a, b, aluresult, flags );
+module alu(alusignal, a, b, aluresult, flags );
 
 input [4:0] alusignal;
 input signed [31:0] a,b;
