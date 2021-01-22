@@ -38,7 +38,8 @@ always @(*)
                 flags[0] = 1'b0; 
                 flags[1] = 1'b0;
                 end
-           end                        				// cmp
+           end        
+                				// cmp
 5'b00110 : aluresult = a & b ; 					// and
 5'b00111 : aluresult = a | b ; 					// or
 5'b01000 : aluresult = ~a ;    					// not
