@@ -51,8 +51,7 @@ always @(*)
           end
 5'b01101:
           begin
-                             					// nop
-          
+                             					// no
           end
                    
 default: begin
